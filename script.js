@@ -11,7 +11,7 @@ const productsData = [
 ];
 
 // ลิ้งก์ Google Apps Script สำหรับรับข้อมูลสั่งซื้อ
-const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxAeV1KvF0IOCs9_mkYVWj-bfBeUUg1ZDnvcImRXt-y-ZoX2BAaowQHmt9PK0uBRjSI/exec";
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycby9LDLcz0KcalTW1o_k4SUnWgZfcaOFvm71CDZz-pVA3bzoVNx8rCbK32kQnnIa_1C8/exec";
 
 // ฟังก์ชันแสดงรายการสินค้าพร้อมปุ่มสั่งซื้อ
 function renderProducts(moodFilter = "all", containerId = "product-grid", limit = null) {
