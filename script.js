@@ -1,5 +1,3 @@
-script.js⁠
-
 // ข้อมูลสินค้า AURA JEWELRY
 const productsData = [
   {
@@ -7,9 +5,10 @@ const productsData = [
     "name": "AURA Career (Compass) ไซส์ S",
     "mood": "career",
     "type": "necklace",
+  
     "size": "S (40 cm)",
     "price": 1290,
-    "image": "IMG_3394.JPG",
+    "image": "career.jpg",
     "description": "สร้อยเข็มทิศมินิมอล เสริมงานและสติปัญญา"
   },
   {
@@ -19,7 +18,7 @@ const productsData = [
     "type": "necklace",
     "size": "L (45 cm)",
     "price": 1890,
-    "image": "IMG_3394.JPG",
+    "image": "career.jpg",
     "description": "สร้อยเข็มทิศมินิมอล เสริมงานและสติปัญญา"
   },
   {
@@ -29,7 +28,7 @@ const productsData = [
     "type": "necklace",
     "size": "S (40 cm)",
     "price": 1290,
-    "image": "IMG_3369 2.JPG",
+    "image": "love.jpg",
     "description": "สร้อยหัวใจอินฟินิตี้ เสริมความรักและเสน่ห์"
   },
   {
@@ -39,7 +38,7 @@ const productsData = [
     "type": "necklace",
     "size": "L (45 cm)",
     "price": 1890,
-    "image": "IMG_3369 2.JPG",
+    "image": "love.jpg",
     "description": "สร้อยหัวใจอินฟินิตี้ เสริมความรักและเสน่ห์"
   },
   {
@@ -49,7 +48,7 @@ const productsData = [
     "type": "necklace",
     "size": "S (40 cm)",
     "price": 1290,
-    "image": "IMG_3373 2.JPG",
+    "image": "wealth.jpg",
     "description": "สร้อยเกือกม้า ดึงดูดโชคลาภและการเงิน"
   },
   {
@@ -59,7 +58,7 @@ const productsData = [
     "type": "necklace",
     "size": "L (45 cm)",
     "price": 1890,
-    "image": "IMG_3373 2.JPG",
+    "image": "wealth.jpg",
     "description": "สร้อยเกือกม้า ดึงดูดโชคลาภและการเงิน"
   },
   {
@@ -69,7 +68,7 @@ const productsData = [
     "type": "necklace",
     "size": "S (40 cm)",
     "price": 1290,
-    "image": "IMG_3374 2.JPG",
+    "image": "peace.jpg",
     "description": "สร้อยพระจันทร์เสี้ยวอเมทิสต์ เสริมความสงบและสุขภาพ"
   },
   {
@@ -79,7 +78,7 @@ const productsData = [
     "type": "necklace",
     "size": "L (45 cm)",
     "price": 1890,
-    "image": "IMG_3374 2.JPG",
+    "image": "peace.jpg",
     "description": "สร้อยพระจันทร์เสี้ยวอเมทิสต์ เสริมความสงบและสุขภาพ"
   }
 ];
@@ -204,6 +203,5 @@ function setupFilterButtons(currentMood) {
     });
   });
 }
-
 
 ￼
