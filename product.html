@@ -1,4 +1,3 @@
-product.html⁠
 <!DOCTYPE html>
 <html lang="th">
 <head>
@@ -31,7 +30,6 @@ product.html⁠
       </div>
 
       <section id="product-grid" class="product-grid">
-        <p>กำลังโหลดรายการสินค้า...</p>
       </section>
     </div>
   </main>
@@ -41,6 +39,82 @@ product.html⁠
       <p>&copy; AURA JEWELRY. Minimalist Sacred Jewelry.</p>
     </div>
   </footer>
-  <script src="script.js"></script>
+
+  <script>
+    const productsData = [
+      { id: "aur-car-s", name: "AURA Career (Compass) ไซส์ S", mood: "career", price: 1290, image: "career.jpg", description: "สร้อยเข็มทิศมินิมอล เสริมงานและสติปัญญา" },
+      { id: "aur-car-l", name: "AURA Career (Compass) ไซส์ L", mood: "career", price: 1890, image: "career.jpg", description: "สร้อยเข็มทิศมินิมอล เสริมงานและสติปัญญา" },
+      { id: "aur-lov-s", name: "AURA Love (Infinity Heart) ไซส์ S", mood: "love", price: 1290, image: "love.jpg", description: "สร้อยหัวใจอินฟินิตี้ เสริมความรักและเสน่ห์" },
+      { id: "aur-lov-l", name: "AURA Love (Infinity Heart) ไซส์ L", mood: "love", price: 1890, image: "love.jpg", description: "สร้อยหัวใจอินฟินิตี้ เสริมความรักและเสน่ห์" },
+      { id: "aur-wea-s", name: "AURA Wealth (Horseshoe) ไซส์ S", mood: "wealth", price: 1290, image: "wealth.jpg", description: "สร้อยเกือกม้า ดึงดูดโชคลาภและการเงิน" },
+      { id: "aur-wea-l", name: "AURA Wealth (Horseshoe) ไซส์ L", mood: "wealth", price: 1890, image: "wealth.jpg", description: "สร้อยเกือกม้า ดึงดูดโชคลาภและการเงิน" },
+      { id: "aur-pea-s", name: "AURA Peace (Crescent Moon) ไซส์ S", mood: "peace", price: 1290, image: "peace.jpg", description: "สร้อยพระจันทร์เสี้ยวอเมทิสต์ เสริมความสงบและสุขภาพ" },
+      { id: "aur-pea-l", name: "AURA Peace (Crescent Moon) ไซส์ L", mood: "peace", price: 1890, image: "peace.jpg", description: "สร้อยพระจันทร์เสี้ยวอเมทิสต์ เสริมความสงบและสุขภาพ" }
+    ];
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const urlParams = new URLSearchParams(window.location.search);
+      const selectedMood = urlParams.get("mood") || "all";
+      renderProducts(selectedMood);
+      setupFilterButtons(selectedMood);
+    });
+
+    function renderProducts(moodFilter) {
+      const productGrid = document.getElementById("product-grid");
+      if (!productGrid) return;
+      productGrid.innerHTML = "";
+
+      const filteredProducts = moodFilter === "all" 
+        ? productsData 
+        : productsData.filter(p => p.mood === moodFilter);
+
+      if (filteredProducts.length === 0) {
+        productGrid.innerHTML = "<p style='grid-column: 1/-1; text-align: center;'>ไม่พบสินค้าในหมวดหมู่นี้</p>";
+        return;
+      }
+
+      filteredProducts.forEach(product => {
+        const card = document.createElement("div");
+        card.className = "product-card";
+        const orderUrl = `order.html?item=${encodeURIComponent(product.name)}&price=${product.price}`;
+
+        card.innerHTML = `
+          <div class="product-card__image-wrapper">
+            <img src="${product.image}" alt="${product.name}" class="product-card__image">
+          </div>
+          <div class="product-card__body">
+            <div class="product-card__header">
+              <span class="badge-mood badge-mood--${product.mood}">${product.mood.toUpperCase()}</span>
+            </div>
+            <h3 class="product-card__title">${product.name}</h3>
+            <p class="product-card__description">${product.description}</p>
+            <div class="product-card__footer">
+              <span class="product-card__price">฿${product.price.toLocaleString()}</span>
+              <a href="${orderUrl}" class="btn btn-primary">สั่งซื้อสินค้า</a>
+            </div>
+          </div>
+        `;
+        productGrid.appendChild(card);
+      });
+    }
+
+    function setupFilterButtons(currentMood) {
+      const filterButtons = document.querySelectorAll(".btn-filter");
+      filterButtons.forEach(btn => {
+        const mood = btn.getAttribute("data-mood-filter");
+        if (mood === currentMood) {
+          btn.classList.add("active");
+        } else {
+          btn.classList.remove("active");
+        }
+
+        btn.addEventListener("click", function () {
+          filterButtons.forEach(b => b.classList.remove("active"));
+          this.classList.add("active");
+          renderProducts(mood);
+        });
+      });
+    }
+  </script>
 </body>
 </html>
