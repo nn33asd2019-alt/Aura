@@ -220,3 +220,212 @@ body {
   backdrop-filter: blur(4px);
 }
 
+/* ==========================================
+   ORDER FORM STYLES (order.html)
+   ========================================== */
+.container-narrow {
+  max-width: 650px;
+}
+
+.order-form-wrapper {
+  background-color: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 2.5rem;
+  box-shadow: var(--shadow-soft);
+}
+
+.aura-form .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.aura-form .form-label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: var(--color-text-main);
+}
+
+.aura-form .required {
+  color: #D9534F;
+}
+
+.aura-form .form-control {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  font-family: var(--font-family-base);
+  font-size: 0.95rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-main);
+  transition: var(--transition-smooth);
+}
+
+.aura-form .form-control:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  background-color: #FFFFFF;
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.15);
+}
+
+.aura-form .readonly-input {
+  background-color: #F2F0EB;
+  color: var(--color-text-muted);
+  cursor: not-allowed;
+  font-weight: 500;
+}
+
+.btn-full {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.9rem;
+}
+
+.form-status-area {
+  margin-bottom: 1rem;
+}
+
+.status-loading {
+  color: var(--color-primary-hover);
+  font-size: 0.9rem;
+}
+
+.status-success {
+  background-color: #EAF0E6;
+  color: #3D5438;
+  padding: 0.8rem 1rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+}
+
+.status-error {
+  background-color: #FBEBEB;
+  color: #703D3D;
+  padding: 0.8rem 1rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+}
+
+/* ==========================================
+   THANK YOU PAGE STYLES (thankyou.html)
+   ========================================== */
+.thankyou-card {
+  background-color: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 4rem 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: var(--shadow-soft);
+}
+
+.thankyou-icon-wrapper {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1.5rem auto;
+}
+
+.thankyou-icon {
+  width: 100%;
+  height: 100%;
+}
+
+.thankyou-title {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.thankyou-message {
+  font-family: var(--font-family-heading);
+  font-size: 1.3rem;
+  color: var(--color-primary-hover);
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.thankyou-notice {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 2.5rem;
+  font-weight: 300;
+}
+
+.thankyou-actions {
+  display: flex;
+  justify-content: center;
+}
+
+/* ==========================================
+   ADMIN DASHBOARD STYLES (admin.html)
+   ========================================== */
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.admin-subtitle {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  font-weight: 300;
+}
+
+.admin-card {
+  background-color: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 1.75rem;
+  margin-bottom: 2rem;
+  box-shadow: var(--shadow-soft);
+}
+
+.admin-card__title {
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+}
+
+.admin-card__desc {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+}
+
+.table-responsive {
+  overflow-x: auto;
+  margin-top: 1rem;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.admin-table th {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-main);
+  font-weight: 600;
+  padding: 0.9rem 1rem;
+  border-bottom: 2px solid var(--color-border);
+  white-space: nowrap;
+}
+
+.admin-table td {
+  padding: 1rem;
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-text-main);
+}
+
+.admin-table tbody tr:hover {
+  background-color: rgba(249, 243, 227, 0.4);
+}
+
