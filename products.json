@@ -1,0 +1,83 @@
+products.json
+[
+  {
+    "id": "aur-car-s",
+    "name": "AURA Career (Compass)",
+    "mood": "career",
+    "type": "necklace",
+    "size": "S (40 cm)",
+    "price": 1290,
+    "image": "images/career.jpg",
+    "description": "สร้อยเข็มทิศมินิมอล สัญลักษณ์แห่งทิศทางที่ถูกต้อง เสริมความก้าวหน้าในหน้าที่การงานและสติปัญญาในการตัดสินใจ"
+  },
+  {
+    "id": "aur-car-l",
+    "name": "AURA Career (Compass)",
+    "mood": "career",
+    "type": "necklace",
+    "size": "L (45 cm)",
+    "price": 1890,
+    "image": "images/career.jpg",
+    "description": "สร้อยเข็มทิศมินิมอล สัญลักษณ์แห่งทิศทางที่ถูกต้อง เสริมความก้าวหน้าในหน้าที่การงานและสติปัญญาในการตัดสินใจ"
+  },
+  {
+    "id": "aur-lov-s",
+    "name": "AURA Love (Infinity Heart)",
+    "mood": "love",
+    "type": "necklace",
+    "size": "S (40 cm)",
+    "price": 1290,
+    "image": "images/love.jpg",
+    "description": "สร้อยหัวใจอินฟินิตี้ ตัวแทนแห่งความรักอันไร้ขีดจำกัด ช่วยดึงดูดความสัมพันธ์ที่เหนียวแน่นและเสริมเสน่ห์เมตตามหานิยม"
+  },
+  {
+    "id": "aur-lov-l",
+    "name": "AURA Love (Infinity Heart)",
+    "mood": "love",
+    "type": "necklace",
+    "size": "L (45 cm)",
+    "price": 1890,
+    "image": "images/love.jpg",
+    "description": "สร้อยหัวใจอินฟินิตี้ ตัวแทนแห่งความรักอันไร้ขีดจำกัด ช่วยดึงดูดความสัมพันธ์ที่เหนียวแน่นและเสริมเสน่ห์เมตตามหานิยม"
+  },
+  {
+    "id": "aur-wth-s",
+    "name": "AURA Wealth (Horseshoe)",
+    "mood": "wealth",
+    "type": "necklace",
+    "size": "S (40 cm)",
+    "price": 1290,
+    "image": "images/wealth.jpg",
+    "description": "สร้อยเกือกม้า มหาโชคสัญลักษณ์โบราณ ทำหน้าที่ดักจับโชคลาภ เงินทอง และโอกาสทางธุรกิจให้ไหลมาเทมา"
+  },
+  {
+    "id": "aur-wth-l",
+    "name": "AURA Wealth (Horseshoe)",
+    "mood": "wealth",
+    "type": "necklace",
+    "size": "L (45 cm)",
+    "price": 1890,
+    "image": "images/wealth.jpg",
+    "description": "สร้อยเกือกม้า มหาโชคสัญลักษณ์โบราณ ทำหน้าที่ดักจับโชคลาภ เงินทอง และโอกาสทางธุรกิจให้ไหลมาเทมา"
+  },
+  {
+    "id": "aur-pse-s",
+    "name": "AURA Peace (Crescent Moon)",
+    "mood": "peace",
+    "type": "necklace",
+    "size": "S (40 cm)",
+    "price": 1290,
+    "image": "images/peace.jpg",
+    "description": "สร้อยพระจันทร์เสี้ยวอเมทิสต์ พลังแห่งความสงบทางจิตใจ ช่วยขจัดความเครียด คลายความวิตกกังวล และเสริมสุขภาพ"
+  },
+  {
+    "id": "aur-pse-l",
+    "name": "AURA Peace (Crescent Moon)",
+    "mood": "peace",
+    "type": "necklace",
+    "size": "L (45 cm)",
+    "price": 1890,
+    "image": "images/peace.jpg",
+    "description": "สร้อยพระจันทร์เสี้ยวอเมทิสต์ พลังแห่งความสงบทางจิตใจ ช่วยขจัดความเครียด คลายความวิตกกังวล และเสริมสุขภาพ"
+  }
+]

@@ -1,0 +1,60 @@
+order.html
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>สั่งซื้อสินค้า | AURA JEWELRY</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand-title">AURA JEWELRY</a>
+      <nav class="nav-links">
+        <a href="index.html">หน้าแรก</a>
+        <a href="product.html">สินค้าทั้งหมด</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section-padding">
+    <div class="container container-narrow">
+      <h1 class="section-title">แบบฟอร์มสั่งซื้อสินค้า</h1>
+      <div class="order-form-wrapper">
+        <form id="orderForm">
+          <div class="form-group">
+            <label for="customerName" class="form-label">ชื่อ-นามสกุล *</label>
+            <input type="text" id="customerName" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="contact" class="form-label">เบอร์โทรศัพท์ / Line ID *</label>
+            <input type="text" id="contact" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="items" class="form-label">รายการสินค้า</label>
+            <input type="text" id="items" class="form-control readonly-input" readonly>
+          </div>
+          <div class="form-group">
+            <label for="total" class="form-label">จำนวนเงินรวม (บาท)</label>
+            <input type="number" id="total" class="form-control readonly-input" readonly>
+          </div>
+          <div class="form-group">
+            <label for="note" class="form-label">ที่อยู่จัดส่ง / หมายเหตุ</label>
+            <textarea id="note" class="form-control" rows="4"></textarea>
+          </div>
+          <div id="form-status"></div>
+          <button type="submit" class="btn btn-primary btn-full">ยืนยันสั่งซื้อ</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; AURA JEWELRY. Minimalist Sacred Jewelry.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

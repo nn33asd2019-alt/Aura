@@ -1,0 +1,110 @@
+admin.html
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ระบบจัดการหลังบ้าน | AURA JEWELRY</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Plus+Jakarta+Sans:wght@400;500;600&family=Prompt:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand-title">AURA ADMIN</a>
+      <nav class="nav-links">
+        <a href="index.html" target="_blank">ไปยังหน้าเว็บหลัก ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section-padding">
+    <div class="container">
+      
+      <section class="admin-header">
+        <div>
+          <h1 class="section-title text-left">ระบบจัดการหลังบ้าน / ตรวจสอบคำสั่งซื้อ</h1>
+          <p class="admin-subtitle">แผงควบคุมและรายการสั่งซื้อสร้อยคอ AURA JEWELRY</p>
+        </div>
+        <div class="admin-actions">
+          <a href="https://docs.google.com/spreadsheets" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            เปิด Google Sheet เพื่อดูรายการสั่งซื้อทั้งหมด ↗
+          </a>
+        </div>
+      </section>
+
+      <div class="admin-card">
+        <h3 class="admin-card__title">การเชื่อมต่อ Google Apps Script Web App</h3>
+        <p class="admin-card__desc">กรุณาตรวจสอบว่าได้ตั้งค่า `WEB_APP_URL` ในไฟล์ `script.js` เรียบร้อยแล้ว</p>
+      </div>
+
+      <div class="admin-card">
+        <h3 class="admin-card__title">รายการคำสั่งซื้อล่าสุด (ข้อมูลจำลอง)</h3>
+        
+        <div class="table-responsive">
+          <table class="admin-table">
+            <thead>
+              <tr>
+                <th>วันเวลา (Timestamp)</th>
+                <th>ชื่อลูกค้า</th>
+                <th>เบอร์โทร / Line</th>
+                <th>รายการสินค้า</th>
+                <th>จำนวนเงินรวม</th>
+                <th>หมายเหตุ</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>05/09/2026 10:15</td>
+                <td>คุณอนันดา สุขสวัสดิ์</td>
+                <td>081-234-5678</td>
+                <td>AURA Career (Compass) ไซส์ S</td>
+                <td>฿1,290</td>
+                <td>ขอห่อของขวัญและเขียนการ์ดวันเกิดครับ</td>
+              </tr>
+              <tr>
+                <td>05/09/2026 09:40</td>
+                <td>คุณมณีรัตน์ วงศ์เทวา</td>
+                <td>Line: maneerat_m</td>
+                <td>AURA Love (Infinity Heart) ไซส์ L</td>
+                <td>฿1,890</td>
+                <td>จัดส่งที่บ้าน เลขที่ 45/2 ถ.สุขุมวิท</td>
+              </tr>
+              <tr>
+                <td>04/09/2026 18:20</td>
+                <td>คุณธนกร โชคอำนวย</td>
+                <td>089-987-6543</td>
+                <td>AURA Wealth (Horseshoe) ไซส์ S</td>
+                <td>฿1,290</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>04/09/2026 15:05</td>
+                <td>คุณณิชาภัทร มงคลจิต</td>
+                <td>Line: nichaphat_p</td>
+                <td>AURA Peace (Crescent Moon) ไซส์ L</td>
+                <td>฿1,890</td>
+                <td>ฝากโทรแจ้งก่อนส่งด้วยค่ะ</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container text-center">
+      <p class="brand-title">AURA JEWELRY ADMIN</p>
+      <p class="copyright">&copy; AURA JEWELRY Management System.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
