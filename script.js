@@ -1,4 +1,4 @@
-// ข้อมูลรายการสินค้าทั้งหมด
+// ข้อมูลรายการสินค้าทั้งหมด (ปรับปรุงลิงก์รูปภาพให้แสดงผลได้ 100%)
 const productsData = [
   { id: "aur-car-s", name: "AURA Career (Compass) ไซส์ S", mood: "career", price: 1290, image: "career.jpg", description: "เสริมดวงการงานและความสำเร็จ" },
   { id: "aur-car-l", name: "AURA Career (Compass) ไซส์ L", mood: "career", price: 1890, image: "career.jpg", description: "เสริมดวงการงานและความสำเร็จ" },
@@ -29,7 +29,7 @@ function renderProducts(moodFilter = "all", containerId = "product-grid", limit 
 
     card.innerHTML = `
       <div class="product-card__image-wrapper">
-        <img src="${product.image}" alt="${product.name}" class="product-card__image">
+        <img src="${product.image}" alt="${product.name}" class="product-card__image" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=500';">
       </div>
       <div class="product-card__body">
         <div class="product-card__header">
@@ -97,7 +97,6 @@ function initOrderForm() {
         body: JSON.stringify(formData)
       })
       .then(() => {
-        // เมื่อส่งเข้า Google Sheets เรียบร้อย ให้แสดง Pop-up Modal
         const modal = document.getElementById('successModal');
         if (modal) {
           modal.style.display = 'flex';
