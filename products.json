@@ -7,7 +7,7 @@ products.json
     "type": "necklace",
     "size": "S (40 cm)",
     "price": 1290,
-    "image": "images/career.jpg",
+    "image": "career.jpg",
     "description": "สร้อยเข็มทิศมินิมอล สัญลักษณ์แห่งทิศทางที่ถูกต้อง เสริมความก้าวหน้าในหน้าที่การงานและสติปัญญาในการตัดสินใจ"
   },
   {
@@ -17,7 +17,7 @@ products.json
     "type": "necklace",
     "size": "L (45 cm)",
     "price": 1890,
-    "image": "images/career.jpg",
+    "image": "career.jpg",
     "description": "สร้อยเข็มทิศมินิมอล สัญลักษณ์แห่งทิศทางที่ถูกต้อง เสริมความก้าวหน้าในหน้าที่การงานและสติปัญญาในการตัดสินใจ"
   },
   {
@@ -27,7 +27,7 @@ products.json
     "type": "necklace",
     "size": "S (40 cm)",
     "price": 1290,
-    "image": "images/love.jpg",
+    "image": "love.jpg",
     "description": "สร้อยหัวใจอินฟินิตี้ ตัวแทนแห่งความรักอันไร้ขีดจำกัด ช่วยดึงดูดความสัมพันธ์ที่เหนียวแน่นและเสริมเสน่ห์เมตตามหานิยม"
   },
   {
@@ -37,7 +37,7 @@ products.json
     "type": "necklace",
     "size": "L (45 cm)",
     "price": 1890,
-    "image": "images/love.jpg",
+    "image": "love.jpg",
     "description": "สร้อยหัวใจอินฟินิตี้ ตัวแทนแห่งความรักอันไร้ขีดจำกัด ช่วยดึงดูดความสัมพันธ์ที่เหนียวแน่นและเสริมเสน่ห์เมตตามหานิยม"
   },
   {
@@ -47,7 +47,7 @@ products.json
     "type": "necklace",
     "size": "S (40 cm)",
     "price": 1290,
-    "image": "images/wealth.jpg",
+    "image": "wealth.jpg",
     "description": "สร้อยเกือกม้า มหาโชคสัญลักษณ์โบราณ ทำหน้าที่ดักจับโชคลาภ เงินทอง และโอกาสทางธุรกิจให้ไหลมาเทมา"
   },
   {
@@ -57,7 +57,7 @@ products.json
     "type": "necklace",
     "size": "L (45 cm)",
     "price": 1890,
-    "image": "images/wealth.jpg",
+    "image": "wealth.jpg",
     "description": "สร้อยเกือกม้า มหาโชคสัญลักษณ์โบราณ ทำหน้าที่ดักจับโชคลาภ เงินทอง และโอกาสทางธุรกิจให้ไหลมาเทมา"
   },
   {
@@ -67,7 +67,7 @@ products.json
     "type": "necklace",
     "size": "S (40 cm)",
     "price": 1290,
-    "image": "images/peace.jpg",
+    "image": "peace.jpg",
     "description": "สร้อยพระจันทร์เสี้ยวอเมทิสต์ พลังแห่งความสงบทางจิตใจ ช่วยขจัดความเครียด คลายความวิตกกังวล และเสริมสุขภาพ"
   },
   {
@@ -77,7 +77,7 @@ products.json
     "type": "necklace",
     "size": "L (45 cm)",
     "price": 1890,
-    "image": "images/peace.jpg",
+    "image": "peace.jpg",
     "description": "สร้อยพระจันทร์เสี้ยวอเมทิสต์ พลังแห่งความสงบทางจิตใจ ช่วยขจัดความเครียด คลายความวิตกกังวล และเสริมสุขภาพ"
   }
 ]
