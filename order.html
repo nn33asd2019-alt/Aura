@@ -43,8 +43,7 @@ order.html
             <label for="note" class="form-label">ที่อยู่จัดส่ง / หมายเหตุ</label>
             <textarea id="note" class="form-control" rows="4"></textarea>
           </div>
-          <div id="form-status"></div>
-          <button type="submit" class="btn btn-primary btn-full">ยืนยันสั่งซื้อ</button>
+          <button type="submit" id="submitBtn" class="btn btn-primary btn-full">ยืนยันสั่งซื้อ</button>
         </form>
       </div>
     </div>
@@ -55,6 +54,61 @@ order.html
       <p>&copy; AURA JEWELRY. Minimalist Sacred Jewelry.</p>
     </div>
   </footer>
-  <script src="script.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // ดึงค่าสินค้าและราคาจาก URL มาใส่ในฟอร์มอัตโนมัติ
+      const urlParams = new URLSearchParams(window.location.search);
+      const itemParam = urlParams.get("item");
+      const priceParam = urlParams.get("price");
+
+      if (itemParam) {
+        document.getElementById("items").value = decodeURIComponent(itemParam);
+      }
+      if (priceParam) {
+        document.getElementById("total").value = priceParam;
+      }
+
+      // จัดการการส่งฟอร์มสั่งซื้อไปยัง Google Sheet
+      const orderForm = document.getElementById("orderForm");
+      if (orderForm) {
+        orderForm.addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const submitBtn = document.getElementById("submitBtn");
+          submitBtn.disabled = true;
+          submitBtn.innerText = "กำลังส่งข้อมูล...";
+
+          const scriptURL = "https://script.google.com/macros/s/AKfycbxAeV1KvF0IOCs9_mkYVWj-bfBeUUg1ZDnvcImRXt-y-ZoX2BAaowQHmt9PK0uBRjSI/exec";
+
+          const formData = {
+            customerName: document.getElementById("customerName").value,
+            contact: document.getElementById("contact").value,
+            items: document.getElementById("items").value,
+            total: document.getElementById("total").value,
+            note: document.getElementById("note").value
+          };
+
+          fetch(scriptURL, {
+            method: "POST",
+            mode: "no-cors",
+            headers: {
+              "Content-Type": "application/json"
+            },
+            body: JSON.stringify(formData)
+          })
+          .then(() => {
+            window.location.href = "thankyou.html";
+          })
+          .catch(error => {
+            alert("เกิดข้อผิดพลาด กรุณาลองใหม่อีกครั้ง");
+            submitBtn.disabled = false;
+            submitBtn.innerText = "ยืนยันสั่งซื้อ";
+            console.error("Error!", error.message);
+          });
+        });
+      }
+    });
+  </script>
 </body>
 </html>
